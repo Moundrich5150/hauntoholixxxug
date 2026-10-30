@@ -22,7 +22,7 @@
     <img src="https://i.postimg.cc/cL78B1yz/HDMVs-Blb-QAU4z-Sd.jpg" onclick="openClient()" width="400" height="300" style="cursor: pointer;">
 <script>
 function openClient() {
-  fetch("https://hauntoholixxxug.graveman.workers.dev/PixelClient")
+  fetch("/PixelClient")
     .then(r => r.text())
     .then(html => {
       const win = window.open("about:blank", "_blank");
@@ -32,6 +32,7 @@ function openClient() {
     });
 }
 </script>
-     <p2>Whenever you click on the image and a new tab doesn't open, try allowing the pop-ups itself before trying again.</p2>
+    <p2></p2> 
+    <p3>Whenever you click on the image and a new tab doesn't open, try allowing the pop-ups itself before trying again.</p3>
   </body>
 </html>
