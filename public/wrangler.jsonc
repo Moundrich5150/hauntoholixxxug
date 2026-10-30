@@ -1,0 +1,10 @@
+{
+  "name": "hauntoholixxxug",
+  "compatibility_date": "2026-10-29",
+  "assets": {
+    "directory": "./public"
+  },
+  "observability": {
+    "enabled": false
+  }
+}
