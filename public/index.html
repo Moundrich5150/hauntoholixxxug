@@ -12,12 +12,25 @@
       }
       
       h1 {
-          color: #000000;
+          color: #FFFFFF;
           }
     </style>
   </head>
   <body> 
     <h1>Hauntoholixxx Unblocked Games</h1>
     <p>Hauntoholixxx Unblocked Games is an unblocked games website designed to go around filters and such to play game, we currently only have minecraft and hopefully try to expand to put up other games and such! We currently have a discord to discuss any ideas of a game being added, https://discord.com/invite/H5BaJJkFS5.<p></p>
+    <img src="https://i.postimg.cc/cL78B1yz/HDMVs-Blb-QAU4z-Sd.jpg" onclick="openClient()" width="400" height="300" style="cursor: pointer;">
+<script>
+function openClient() {
+  fetch("https://moundrich5150.github.io/PixelCraftClient/PixelClient.html")
+    .then(r => r.text())
+    .then(html => {
+      const win = window.open("about:blank", "_blank");
+      win.document.open();
+      win.document.write(html);  // fixed from htmlContent
+      win.document.close();
+    });
+}
+</script>
   </body>
 </html>
