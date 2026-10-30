@@ -11,6 +11,7 @@
       {
         background-color: #1a1a2e;
         color: #FFFFFF;
+        style="border: 0;"
         text-align: center;
       }
       
@@ -28,11 +29,13 @@
     <img src="https://i.postimg.cc/cL78B1yz/HDMVs-Blb-QAU4z-Sd.jpg" onclick="openClient()" alt="minecraft" width="400" height="300" style="cursor: pointer;">
     <p>Whenever you click on the image and a new tab doesn't open, try allowing the pop-ups itself before trying again.</p>
     <iframe src="https://guns.lol/Ghosthackle" width="640" height="480" title="What is the owner doing RN?"></iframe>
-    style="border: 0;"
     <button onclick="loadProfile()">Show my guns.lol</button>
-    <iframe id="profile" title="What is the owner doing RN?" width="640" height="480"></iframe>
+    <iframe id="profile" title="What is the owner doing RN?" width="1" height="1"></iframe>
 <script>
-function openClient() {
+function loadProfile() {
+  document.getElementById("profile").src = "ADDRESS";
+}
+  function openClient() {
   const win = window.open("about:blank", "_blank");
   fetch("/PixelClient")
     .then(r => r.text())
