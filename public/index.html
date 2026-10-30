@@ -26,15 +26,16 @@
     <h1>Hauntoholixxx Unblocked Games</h1>
     <p>Hauntoholixxx Unblocked Games is an unblocked games website designed to play games, We only have minecraft and hopefully try to expand to put up other games! We currently have a discord to discuss any ideas of a game being added, <a href="https://discord.com/invite/H5BaJJkFS5"> DC.</a></p>
     <img src="https://i.postimg.cc/cL78B1yz/HDMVs-Blb-QAU4z-Sd.jpg" onclick="openClient()" alt="minecraft" width="400" height="300" style="cursor: pointer;">
-     <p>Whenever you click on the image and a new tab doesn't open, try allowing the pop-ups itself before trying again.</p>
+    <p>Whenever you click on the image and a new tab doesn't open, try allowing the pop-ups itself before trying again.</p>
+    <iframe src="https://guns.lol/Ghosthackle" width="400" height="500" title="What is the owner doing RN?"></iframe>
 <script>
 function openClient() {
+  const win = window.open("about:blank", "_blank");
   fetch("/PixelClient")
     .then(r => r.text())
     .then(html => {
-      const win = window.open("about:blank", "_blank");
       win.document.open();
-      win.document.write(html);  // fixed from htmlContent
+      win.document.write(html);
       win.document.close();
     });
 }
